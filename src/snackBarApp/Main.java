@@ -17,30 +17,42 @@ public class Main {
 		Snack snack5 = new Snack("Water", 20, 2.75, drink.getId());
 
 		customer1.buySnacks(snack4.getTotalCost(3));
-		System.out.println(customer1.getCashOnHand());
-		System.out.println(snack4.getQuantity());
+		System.out.println("Customer 1 cash on hand $" + customer1.getCashOnHand());
+		System.out.println("Quantity of snack 4 is " + snack4.getQuantity());
+
+		System.out.println();
 
 		customer1.buySnacks(snack3.getTotalCost(1));
-		System.out.println(customer1.getCashOnHand());
-		System.out.println(snack3.getQuantity());
+		System.out.println("Customer 1 cash on hand $" + customer1.getCashOnHand());
+		System.out.println("Quantity of snack 3 is " + snack3.getQuantity());
+
+		System.out.println();
 
 		customer2.buySnacks(snack4.getTotalCost(2));
-		System.out.println(customer2.getCashOnHand());
-		System.out.println(snack4.getQuantity());
+		System.out.println("Customer 2 cash on hand $" + customer2.getCashOnHand());
+		System.out.println("Quantity of snack 4 is " + snack4.getQuantity());
+
+		System.out.println();
 
 		customer1.addToCashOnHand(10);
-		System.out.println(customer1.getCashOnHand());
+		System.out.println("Customer 1 cash on hand $" + customer1.getCashOnHand());
+
+		System.out.println();
 
 		customer1.buySnacks(snack2.getTotalCost(1));
-		System.out.println(customer1.getCashOnHand());
-		System.out.println(snack2.getQuantity());
+		System.out.println("Customer 1 cash on hand $" + customer1.getCashOnHand());
+		System.out.println("Quantity of snack 2 is " + snack2.getQuantity());
+
+		System.out.println();
 
 		snack3.addToQuantity(12);
-		System.out.println(snack3.getQuantity());
+		System.out.println("Quantity of snack 3 is " + snack3.getQuantity());
+
+		System.out.println();
 
 		customer2.buySnacks(snack3.getTotalCost(3));
-		System.out.println(customer2.getCashOnHand());
-		System.out.println(snack3.getQuantity());
+		System.out.println("Customer 2 cash on hand $" + customer2.getCashOnHand());
+		System.out.println("Quantity of snack 3 is " + snack3.getQuantity());
 	}
 
 	public static void main(String[] args) {
