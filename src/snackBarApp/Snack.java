@@ -44,10 +44,6 @@ public class Snack {
 		this.name = name;
 	}
 
-	// public void setQuantity(int quantity) {
-	// 	this.quantity = quantity;
-	// }
-
 	public void setCost(double cost) {
 		this.cost = cost;
 	}
@@ -57,31 +53,15 @@ public class Snack {
 	}
 
 	// other methods
-	// public void addToQuantity(int quantity) {
-	// 	this.quantity = this.quantity + quantity;
-	// }
+	public void addToQuantity(int quantity) {
+		this.quantity = this.quantity + quantity;
+	}
 
+	public void snacksBought(int numOfSnacksBought) {
+		this.quantity = this.quantity - numOfSnacksBought;
+	}
 
+	public double getTotalCost(int totalNumOfItems) {
+		return this.cost * totalNumOfItems;
+	}
 }
-
-// ### Snack
-//
-// Snack has fields (so knows)
-//
-// * maxId - keep track of last used snack id
-// * id - automatically generated field
-// * name
-// * quantity
-// * cost
-// * vending machine id
-//
-// Snack has methods (so can)
-//
-// * get id
-// * set and get name
-// * set and get cost
-// * set and get vending machine id
-// * get quantity
-// * add quantity when given how many to add
-// * buy snack when given how many to buy
-// * get total cost given a quantity

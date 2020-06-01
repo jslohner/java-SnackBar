@@ -15,6 +15,32 @@ public class Main {
 
 		Snack snack4 = new Snack("Soda", 24, 2.50, drink.getId());
 		Snack snack5 = new Snack("Water", 20, 2.75, drink.getId());
+
+		customer1.buySnacks(snack4.getTotalCost(3));
+		System.out.println(customer1.getCashOnHand());
+		System.out.println(snack4.getQuantity());
+
+		customer1.buySnacks(snack3.getTotalCost(1));
+		System.out.println(customer1.getCashOnHand());
+		System.out.println(snack3.getQuantity());
+
+		customer2.buySnacks(snack4.getTotalCost(2));
+		System.out.println(customer2.getCashOnHand());
+		System.out.println(snack4.getQuantity());
+
+		customer1.addToCashOnHand(10);
+		System.out.println(customer1.getCashOnHand());
+
+		customer1.buySnacks(snack2.getTotalCost(1));
+		System.out.println(customer1.getCashOnHand());
+		System.out.println(snack2.getQuantity());
+
+		snack3.addToQuantity(12);
+		System.out.println(snack3.getQuantity());
+
+		customer2.buySnacks(snack3.getTotalCost(3));
+		System.out.println(customer2.getCashOnHand());
+		System.out.println(snack3.getQuantity());
 	}
 
 	public static void main(String[] args) {
