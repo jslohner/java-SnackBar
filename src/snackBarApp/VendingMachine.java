@@ -13,11 +13,11 @@ public class VendingMachine {
 	}
 
 	// get methods
-	public int getId(int id) {
+	public int getId() {
 		return id;
 	}
 
-	public String getName(String name) {
+	public String getName() {
 		return name;
 	}
 
